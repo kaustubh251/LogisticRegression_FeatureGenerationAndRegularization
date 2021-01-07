@@ -73,7 +73,6 @@ def accuracy(theta_Final, x, y):
 init_Theta = []
 for i in range(len(x[0])):
     init_Theta.append(1)
-print(init_Theta)
 print("Enter 2 datapoints:")
 init_Datapoint = [1]
 init_Datapoint.append(float(input()))
@@ -89,7 +88,7 @@ print("Enter learning rate:")
 alpha = float(input())
 print("Enter maximum number of iterations for Gradient Descent to converge:")
 maxIter = int(input())
-regParam = 1000
+regParam = 300
 theta_Final = gradDescent(init_Theta, x, y, alpha, maxIter, regParam)
 Z = z(theta_Final, init_Datapoint)
 H = h(Z)
