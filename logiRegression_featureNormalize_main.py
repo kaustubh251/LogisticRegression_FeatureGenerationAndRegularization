@@ -88,7 +88,7 @@ print("Enter learning rate:")
 alpha = float(input())
 print("Enter maximum number of iterations for Gradient Descent to converge:")
 maxIter = int(input())
-regParam = 300
+regParam = 1
 theta_Final = gradDescent(init_Theta, x, y, alpha, maxIter, regParam)
 Z = z(theta_Final, init_Datapoint)
 H = h(Z)
